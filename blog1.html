@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog1.css">
+    <link rel="stylesheet" href="/website - Copy/index.css">
+    <link rel="stylesheet" href="/website - Copy/footer.css">
+
+    <title>6 Effective Ways To Reduce E-waste</title>
+</head>
+<body>
+        
+<nav class="nav">
+    <div class="logo">
+        <img src="/website/images/logo.svg" alt="logo"> 
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li> 
+        <li><a href="/website/newPage.html" >Register</a></li>
+        
+        <li><a href="#">Services</a></li>
+        <li><a onclick="openPopup()">Contact Us</a></li>        
+    </ul>
+</nav>
+    
+    <header>
+        <h1>6 Effective Ways To Reduce E-waste</h1>
+    </header>
+    <div class="center">
+        <img width="300" src="https://th.bing.com/th/id/R.209c7bfe3e624ee3f48a6eb779a551e8?rik=%2bFg6rj8UB34oyg&riu=http%3a%2f%2fwww.arrayconsortium.com%2fwp-content%2fuploads%2f2018%2f05%2fShowImage.png&ehk=zankeprlp%2fK0DmXDUB6YgNxAau3i5a0n%2b2qKrnUpaac%3d&risl=&pid=ImgRaw&r=0" alt="Circular Image">
+    </div>
+    <div class="container">
+        <p>Reducing e-waste is crucial for minimizing environmental impact and conserving resources. As we all know, global warming is a serious issue, so everyone should take one step to reduce their carbon footprint, which is generated due to e-waste. Businesses can follow various methods to reduce their e-waste.</p>
+        <h2>Top 6 ways to reduce e-waste</h2>
+        <h3>1. Extended Producer Responsibility (EPR):</h3>
+        <p>In this regard, manufacturers of electrical and electronic products have to manage the entire lifecycle of their electronic products, which includes proper disposal and recycling of their old or discarded electronic products. By implementing EPR regulations, businesses not only achieve their EPR targets but also help reduce e-waste to create a sustainable future.</p>
+        <h3>2. Product Design:</h3>
+            <p>The producer should design electronic devices for longevity and ease of repair. Modular components, standardized parts, and accessible repair manuals help extend the lifespan of electronic devices. Manufacturers can use sustainable materials in their products, making recycling easier and reducing hazardous substances. They should use minimal and eco-friendly packaging, reducing waste generated during transportation and delivery.</p>
+            <h3>3. Promote repair, donation, and resale of electronic devices:</h3>
+            <P>Promote repair culture by supporting repair cafes, workshops, and online resources. Encouraging people to fix their electronic devices instead of replacing them helps reduce e-waste. Donate or sell working electronics to the people who are in need of those devices. This extends their usability and benefits others who might not be able to afford new devices. Encourage creativity by repurposing old electronics for new uses. This reduces the need to discard items and stimulates innovation.</P>
+            <h3>4. Electronic RecyclingPrograms: </h3>
+            <p>Establish and promote accessible e-waste recycling programs. These facilities ensure the proper disposal of electronic components. Raise awareness about the environmental impact of e-waste. Educated consumers are more likely to make responsible choices. Electronics retailers can offer trade-in options when purchasing new devices. This incentivizes customers to recycle old electronics properly.</p>
+            <h3>5. Minimalist Consumption and Battery Disposal:</h3>
+            <p>Encourage consumers to buy only what they need. Reduced demand for electronics leads to fewer products being discarded. Implement safe battery disposal methods to prevent hazardous chemicals from seeping into the environment. Use advanced technologies to convert e-waste into energy, reducing the burden on landfills.</p>
+            <h3>6. Collaboration: </h3>
+            <p>Governments, manufacturers, NGOs, and consumers must collaborate to find sustainable solutions for reducing e-waste. Support platforms that facilitate the buying and selling of used electronics, extending the lifecycle of devices. Governments can offer incentives to companies that develop eco-friendly electronic products and recycling technologies.<br>
+
+              <br> By implementing these tips, businesses can significantly reduce the amount of e-waste generated and move towards a more sustainable future. </p>
+        <!-- Other content... -->
+    </div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-options">
+        <div class="footer-option">
+          <h4>About Us</h4>
+          <p>Learn more about our company and our mission.</p>
+          <a href="">Read More</a>
+        </div>
+        <div class="footer-option">
+          <h4>Contact Us</h4>
+          <p>Get in touch with us for any inquiries or assistance.</p>
+          <a onclick="openPopup()">Contact Form</a>
+
+        </div>
+
+
+        <div class="footer-option">
+          <h4>FAQs</h4>
+          <div class="faq-question">
+            <p>How do I get started?</p>
+            <div class="faq-answer">To get started, simply sign up on our platform </div>
+          </div>
+          <div class="faq-question">
+            <p>how can I request for waste pick up?</p>
+            <div class="faq-answer">you can request the wate pickup by directly filling pickup form</div>
+          </div>
+          <!-- Add more FAQ questions and answers as needed -->
+        </div>
+        <div class="footer-option">
+          <h4>Careers</h4>
+          <p>Join our team and explore career opportunities.</p>
+          <a href="">View Jobs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="scroll-top-button" class="scroll-top-button">Scroll to Top</button>
+  
+  <script>
+    // Smooth scrolling to top button
+    const scrollTopButton = document.getElementById('scroll-top-button');
+    scrollTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach((question) => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (question.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          answer.style.maxHeight = 0;
+        }
+      });
+    });
+  </script>
+  <script src="/website/footer.js"></script>
+
+
+</body>
+</html>
